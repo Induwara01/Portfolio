@@ -430,3 +430,69 @@ footer {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
+/* Mobile Small (320px) */
+@media (max-width: 320px) {
+    body {
+        font-size: 0.8em;
+    }
+    .container, .about-container, .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-photo, .project-photo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile Medium (375px) */
+@media (max-width: 375px) {
+    .buttons .button {
+        padding: 0.5em 1em;
+        font-size: 0.9em;
+    }
+    .intro {
+        padding: 1em;
+    }
+}
+
+/* Mobile Large (425px) */
+@media (max-width: 425px) {
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+}
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+    .about-container, .projects-container, .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-container .skill {
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Laptop (1024px) */
+@media (max-width: 1024px) {
+    .profile-photo {
+        width: 80%;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+/* Laptop Large (1440px) */
+@media (max-width: 1440px) {
+    .container, .about-container, .projects-container {
+        max-width: 90%;
+    }
+}
+
